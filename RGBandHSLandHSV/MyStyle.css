@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    vertical-align: top;
+}
+
+hr{
+    clear: both;
+}
+
+.title{
+clear: both;
+}
+
+.illustrate{
+    margin-bottom: 10px;
+    text-indent: 50px;
+}
+
+.adjuster{
+    float: left;
+    display: inline-block;
+    left: 60px;
+    position: relative;
+}
+
+.color{
+    float: left;
+    display: inline-block;
+    margin: 5px;
+    left: 50px;
+    position: relative;
+    border: 1px dotted black;
+    width: 100px;
+    height: 60px;
+}
+
+.valueName, .setter, .colorValue, .convert{
+    margin: 5px;
+    float: left;
+    position: relative;
+}
+
+.valueName ::before{
+    content: "";
+    display: block;
+    width: 200px;
+}
+
+.valueName label{
+    display: block;
+}
+
+.setter input{
+    display: block;
+}
+
+.colorValue input{
+    display: block;
+    width: 50px;
+}
+
+.convert input{
+    margin: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+    width: 60px;
+    height: 55px;
+}
+
+#container{
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    text-align: left;
+    font-family: sans-serif;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 10px gray;
+}

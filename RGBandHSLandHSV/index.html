@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color</title>
+    <link href="MyStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <h3>颜色的三种表达方式：RGB、HSL和HSV</h3>
+        <hr>
+
+        <div>
+            <div class="title">
+                <span>RGB：</span>
+            </div>
+            <div class="illustrate">
+                <span>参数：红（R）、绿（G）、蓝（B）</span>
+            </div>
+            <div id="colorRGB" class="color"></div>
+            <div id="adjusterRGB" class="adjuster">
+                <form>
+                    <div class="valueName">
+                        <label for="setR">红（Red）：</label>
+                        <label for="setG">绿（Green）：</label>
+                        <label for="setB">蓝（Blue）：</label>
+                    </div>
+                    <div class="setter">
+                        <input id="setR" type="range" min="0" max="255">
+                        <input id="setG" type="range" min="0" max="255">
+                        <input id="setB" type="range" min="0" max="255">
+                    </div>
+                    <div class="colorValue">
+                        <label for="valueR"></label>
+                        <label for="valueG"></label>
+                        <label for="valueB"></label>
+                        <input type="text" id="valueR">
+                        <input type="text" id="valueG">
+                        <input type="text" id="valueB">
+                    </div>
+                    <div class="convert">
+                        <label for="convertRGB"></label>
+                        <input type="button" id="convertRGB" value="转换">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <div class="title">
+                <span>HSL：</span>
+            </div>
+            <div class="illustrate">
+                <span>参数：色相(H)、饱和度(S)、明度(L)</span>
+            </div>
+            <div id="colorHSL" class="color"></div>
+            <div id="adjusterHSL" class="adjuster">
+                <form>
+                    <div class="valueName">
+                        <label for="setLH">色相（Hue）：</label>
+                        <label for="setLS">饱和度（Saturation）：</label>
+                        <label for="setLL">明度（Lightness）：</label>
+                    </div>
+                    <div class="setter">
+                        <input id="setLH" type="range" min="0" max="360" value="180">
+                        <input id="setLS" type="range" min="0" max="100" value="50">
+                        <input id="setLL" type="range" min="0" max="100" value="50">
+                    </div>
+                    <div class="colorValue">
+                        <label for="valueLH"></label>
+                        <label for="valueLS"></label>
+                        <label for="valueLL"></label>
+                        <input type="text" id="valueLH">
+                        <input type="text" id="valueLS">
+                        <input type="text" id="valueLL">
+                    </div>
+                    <div class="convert">
+                        <label for="convertHSL"></label>
+                        <input id="convertHSL" type="button" value="转换">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="title">
+                <span>HSV（HSB）：</span>
+            </div>
+            <div class="illustrate">
+                <span>参数：色调（H），饱和度（S），明度（V）</span>
+            </div>
+            <div id="colorHSV" class="color"></div>
+            <div id="adjusterHSV" class="adjuster">
+                <form>
+                    <div class="valueName">
+                        <label for="setVH">色调（Hue）：</label>
+                        <label for="setVS">饱和度（Saturation）：</label>
+                        <label for="setVV">明度（Value）：</label>
+                    </div>
+                    <div class="setter">
+                        <input id="setVH" type="range" min="0" max="360" value="180">
+                        <input id="setVS" type="range" min="0" max="100" value="50">
+                        <input id="setVV" type="range" min="0" max="100" value="50">
+                    </div>
+                    <div class="colorValue">
+                        <label for="valueVH"></label>
+                        <label for="valueVS"></label>
+                        <label for="valueVV"></label>
+                        <input type="text" id="valueVH">
+                        <input type="text" id="valueVS">
+                        <input type="text" id="valueVV">
+                    </div>
+                    <div class="convert">
+                        <label for="convertHSV"></label>
+                        <input id="convertHSV" type="button" value="转换">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+    </div>
+    <script src="MyScript.js"></script>
+</body>
+</html>
