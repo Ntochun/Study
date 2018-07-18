@@ -41,9 +41,11 @@ function showCanvas(dataUrl) {
     //加载图片
     img = new Image();
     img.onload = function () {
+        // 确定缩放比例尺
         imgScale = img.width > img.height ? cWidth / img.width : cHeight / img.height;
         imgScale = img.width * imgScale > cWidth ? cWidth / img.width : imgScale;
         imgScale = img.height * imgScale > cHeight ? cHeight / img.height : imgScale;
+
         cvs.width = img.width * imgScale;
         cvs.height = img.height * imgScale;
         drawImage();
@@ -111,7 +113,7 @@ cvs.onmousedown = function (e) {
             break;
         case "move":
             cvs.addEventListener("mousemove", mousemove);
-            cvs.onmouseup = function (e) {
+            cvs.onmouseup = function () {
                 cvs.removeEventListener("mousemove", mousemove);
                 cvs.style.cursor = "default";
             };
@@ -124,6 +126,6 @@ cvs.onmousedown = function (e) {
     }
 };
 
-cvs.oncontextmenu = function (e) {
-    return false;
+cvs.oncontextmenu = function () {
+    return false; //禁止右键菜单
 };
